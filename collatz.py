@@ -1,5 +1,5 @@
 # The number we will perform the collatz operation on.
-n = 20 
+n = int(input("Enter a positive integer:")) 
 
 # Keep looping until we reach number 1.
 # Note: This is assumes the collatz conjecture is true.
@@ -9,7 +9,7 @@ while n != 1:
     #Check is n is even.
     if n % 2 == 0:
     # If n is even, divede it by two.
-        n = n / 2
+        n = n // 2
     else:
     # If n is odd, multiply it by three and add 1.
         n = (3 * n) + 1
